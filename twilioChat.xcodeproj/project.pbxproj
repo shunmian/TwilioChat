@@ -14,9 +14,6 @@
 		277934021ED5727F00DE167E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277934001ED5727F00DE167E /* LaunchScreen.storyboard */; };
 		2779340D1ED5727F00DE167E /* twilioChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779340C1ED5727F00DE167E /* twilioChatTests.m */; };
 		277934181ED5727F00DE167E /* twilioChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934171ED5727F00DE167E /* twilioChatUITests.m */; };
-		277934271ED5738700DE167E /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934261ED5738700DE167E /* ChatTableViewController.m */; };
-		2779342A1ED5AB6A00DE167E /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934291ED5AB6A00DE167E /* ChatRoomViewController.m */; };
-		2779342D1ED5B22200DE167E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779342C1ED5B22200DE167E /* LoginViewController.m */; };
 		277934FF1ED974B500DE167E /* TCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934FE1ED974B400DE167E /* TCUser.m */; };
 		277935051ED9BA0B00DE167E /* TCRestAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 277935041ED9BA0B00DE167E /* TCRestAPIManager.m */; };
 		2779350B1ED9BA9700DE167E /* TCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779350A1ED9BA9700DE167E /* TCService.m */; };
@@ -71,12 +68,6 @@
 		277934131ED5727F00DE167E /* twilioChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twilioChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		277934171ED5727F00DE167E /* twilioChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twilioChatUITests.m; sourceTree = "<group>"; };
 		277934191ED5727F00DE167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		277934251ED5738700DE167E /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
-		277934261ED5738700DE167E /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
-		277934281ED5AB6A00DE167E /* ChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
-		277934291ED5AB6A00DE167E /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
-		2779342B1ED5B22200DE167E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		2779342C1ED5B22200DE167E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		277934FD1ED974B400DE167E /* TCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUser.h; sourceTree = "<group>"; };
 		277934FE1ED974B400DE167E /* TCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUser.m; sourceTree = "<group>"; };
 		277935031ED9BA0B00DE167E /* TCRestAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRestAPIManager.h; sourceTree = "<group>"; };
@@ -196,8 +187,6 @@
 				27C1833A1EDE99E50048DBBF /* TCSearchResultsViewController.m */,
 				2779350C1ED9BC7D00DE167E /* TCTestViewController.h */,
 				2779350D1ED9BC7D00DE167E /* TCTestViewController.m */,
-				2779342B1ED5B22200DE167E /* LoginViewController.h */,
-				2779342C1ED5B22200DE167E /* LoginViewController.m */,
 				277935031ED9BA0B00DE167E /* TCRestAPIManager.h */,
 				277935041ED9BA0B00DE167E /* TCRestAPIManager.m */,
 				27BC169F1EDC6AD600D63AED /* TCEvent.h */,
@@ -218,10 +207,6 @@
 				27FE97EF1EDAB46000EE965D /* TCMember.m */,
 				27C1833F1EDFF6010048DBBF /* TCMemberResponsed.h */,
 				27C183401EDFF6010048DBBF /* TCMemberResponsed.m */,
-				277934281ED5AB6A00DE167E /* ChatRoomViewController.h */,
-				277934291ED5AB6A00DE167E /* ChatRoomViewController.m */,
-				277934251ED5738700DE167E /* ChatTableViewController.h */,
-				277934261ED5738700DE167E /* ChatTableViewController.m */,
 				277933FB1ED5727F00DE167E /* Main.storyboard */,
 				277933FE1ED5727F00DE167E /* Assets.xcassets */,
 				277934001ED5727F00DE167E /* LaunchScreen.storyboard */,
@@ -558,9 +543,7 @@
 				27FE97F31EDAE17700EE965D /* TCMessage.m in Sources */,
 				277933F41ED5727F00DE167E /* main.m in Sources */,
 				27FE97F81EDB0E3800EE965D /* TCCredential.m in Sources */,
-				277934271ED5738700DE167E /* ChatTableViewController.m in Sources */,
 				27FE97EA1EDA8A5700EE965D /* TCChannelListViewControlller.m in Sources */,
-				2779342A1ED5AB6A00DE167E /* ChatRoomViewController.m in Sources */,
 				27BC16A11EDC6AD600D63AED /* TCEvent.m in Sources */,
 				27FE97FB1EDB150800EE965D /* TCBinding.m in Sources */,
 				2779350B1ED9BA9700DE167E /* TCService.m in Sources */,
@@ -569,7 +552,6 @@
 				2779350E1ED9BC7D00DE167E /* TCTestViewController.m in Sources */,
 				27FE97F01EDAB46000EE965D /* TCMember.m in Sources */,
 				27FE97E41EDA86C000EE965D /* TCLoginViewController.m in Sources */,
-				2779342D1ED5B22200DE167E /* LoginViewController.m in Sources */,
 				27FE97ED1EDAA9F800EE965D /* TCChannel.m in Sources */,
 				277935051ED9BA0B00DE167E /* TCRestAPIManager.m in Sources */,
 				27BC16A41EDC7D8E00D63AED /* TCChatViewController.m in Sources */,

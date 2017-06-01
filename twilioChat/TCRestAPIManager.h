@@ -33,6 +33,7 @@
 
 #pragma mark - network connecting
 -(void)reAuth;
+-(void)failedNetworkUIAlerting;
 
 +(TCRestAPIManager *)sharedManager;
 

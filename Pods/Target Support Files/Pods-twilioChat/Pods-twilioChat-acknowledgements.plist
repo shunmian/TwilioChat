@@ -43,16 +43,6 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Hyphenate Inc. 2016</string>
-			<key>License</key>
-			<string>Copyright</string>
-			<key>Title</key>
-			<string>HyphenateLite</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
 			<string>Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/
@@ -1203,16 +1193,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			<string>Apache2</string>
 			<key>Title</key>
 			<string>TransitionKit</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright (c) 2017 Twilio, Inc. All rights reserved. Use of this software is subject to the terms and conditions of the Twilio Terms of Service located at http://www.twilio.com/legal/tos</string>
-			<key>License</key>
-			<string>Commercial</string>
-			<key>Title</key>
-			<string>TwilioChatClient</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

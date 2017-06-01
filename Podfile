@@ -10,9 +10,7 @@ target 'twilioChat' do
 
   pod 'ReactiveCocoa', '~> 2.5'
   pod 'Masonry'
-  pod 'HyphenateLite', '~> 3.2.3'
   pod 'JSQMessagesViewController'
-  pod 'TwilioChatClient', '~> 0.17'
   pod 'AFNetworking', '~> 3.0'
   pod 'RestKit', '~> 0.27'
 

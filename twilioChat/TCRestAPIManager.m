@@ -45,6 +45,7 @@ static NSString *const serviceSID = @"IS276d698362e2479096001348ed88af10";
         [_sharedManager.objectManager.HTTPClient setAuthorizationHeaderWithUsername:kAcountSID password:kAuthToken];
             //add reachability
         
+        
         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
             switch (status) {
                 case AFNetworkReachabilityStatusNotReachable:
@@ -54,13 +55,13 @@ static NSString *const serviceSID = @"IS276d698362e2479096001348ed88af10";
                     break;
                 case AFNetworkReachabilityStatusReachableViaWiFi:
                     NSLog(@"WIFI");
-                    [_sharedManager reAuth];
                     _sharedManager.networkReachbility = YES;
+                    [_sharedManager reAuth];
                     break;
                 case AFNetworkReachabilityStatusReachableViaWWAN:
                     NSLog(@"3G");
-                    [_sharedManager reAuth];
                     _sharedManager.networkReachbility = YES;
+                    [_sharedManager reAuth];
                     break;
                 default:
                     NSLog(@"Unkown network status");
@@ -651,7 +652,9 @@ static NSString *const serviceSID = @"IS276d698362e2479096001348ed88af10";
                           cancelButtonTitle:@"Cancel"
                           otherButtonTitles:@"OK",nil];
     // 显示
-    [alert show];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [alert show];
+    });
 }
 
 -(void)reAuth{

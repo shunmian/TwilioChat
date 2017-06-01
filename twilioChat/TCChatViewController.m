@@ -9,7 +9,6 @@
 #import "TCChatViewController.h"
 #import "TCRestAPIManager.h"
 #import "TCSearchResultsViewController.h"
-#import <TwilioChatClient/TwilioChatClient.h>
 #import <JSQMessagesBubbleImage.h>
 #import <JSQMessagesBubbleImageFactory.h>
 #import <JSQMessage.h>
@@ -19,7 +18,7 @@
 
 
 
-@interface TCChatViewController () <UITableViewDataSource,UITabBarDelegate,TwilioChatClientDelegate,UITextFieldDelegate,UISearchResultsUpdating,UIGestureRecognizerDelegate>
+@interface TCChatViewController () <UITableViewDataSource,UITabBarDelegate,UITextFieldDelegate,UISearchResultsUpdating,UIGestureRecognizerDelegate>
 @property(nonatomic, strong) TCRestAPIManager *restAPIManager;
 @property(nonatomic, strong) JSQMessagesBubbleImage *outgointBubbleImageView;
 @property(nonatomic, strong) JSQMessagesBubbleImage *incomingBubbleImageView;
@@ -152,6 +151,12 @@
         senderDisplayName:(NSString *)senderDisplayName
                      date:(NSDate *)date{
     NSLog(@"return pressed");
+    
+    if(self.restAPIManager.networkReachbility == NO){
+        [self.restAPIManager failedNetworkUIAlerting];
+        return;
+    }
+    
     if(text.length == 0){
         [self.view endEditing:YES];
     }else{

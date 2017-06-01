@@ -129,6 +129,11 @@
 }
 
 - (IBAction)loginBTNPressed:(id)sender {
+    if(self.restAPIManager.networkReachbility == NO){
+        [self.restAPIManager failedNetworkUIAlerting];
+        return;
+    }
+    
     [self.restAPIManager getUserWithIdentity:self.userIdentityTextField.text withCompletion:^(TCUser *user, BOOL success, NSError *error) {
         if(success){
             NSLog(@"login successful: %@",user.friendlyName);

@@ -112,6 +112,14 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if(self.restAPIManager.networkReachbility == NO){
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+        [self.restAPIManager failedNetworkUIAlerting];
+        return;
+    }
+    
+    
     TCUser *toUser = self.users[indexPath.row];
     self.toUser = toUser;
     NSString *channelIdentity;

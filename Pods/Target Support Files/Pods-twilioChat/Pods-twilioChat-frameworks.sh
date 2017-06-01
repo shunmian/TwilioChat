@@ -87,15 +87,6 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/HyphenateLite/ios_IM_HyphenateLite_sdk_3.2.3/HyphenateSDK/HyphenateLite.framework"
-  install_framework "${PODS_ROOT}/TwilioChatClient/TwilioChatClient.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/HyphenateLite/ios_IM_HyphenateLite_sdk_3.2.3/HyphenateSDK/HyphenateLite.framework"
-  install_framework "${PODS_ROOT}/TwilioChatClient/TwilioChatClient.framework"
-fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi
