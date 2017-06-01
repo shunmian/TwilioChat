@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		277933F41ED5727F00DE167E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 277933F31ED5727F00DE167E /* main.m */; };
+		277933F71ED5727F00DE167E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 277933F61ED5727F00DE167E /* AppDelegate.m */; };
+		277933FD1ED5727F00DE167E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277933FB1ED5727F00DE167E /* Main.storyboard */; };
+		277933FF1ED5727F00DE167E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277933FE1ED5727F00DE167E /* Assets.xcassets */; };
+		277934021ED5727F00DE167E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277934001ED5727F00DE167E /* LaunchScreen.storyboard */; };
+		2779340D1ED5727F00DE167E /* twilioChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779340C1ED5727F00DE167E /* twilioChatTests.m */; };
+		277934181ED5727F00DE167E /* twilioChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934171ED5727F00DE167E /* twilioChatUITests.m */; };
+		277934271ED5738700DE167E /* ChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934261ED5738700DE167E /* ChatTableViewController.m */; };
+		2779342A1ED5AB6A00DE167E /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934291ED5AB6A00DE167E /* ChatRoomViewController.m */; };
+		2779342D1ED5B22200DE167E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779342C1ED5B22200DE167E /* LoginViewController.m */; };
+		277934FF1ED974B500DE167E /* TCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 277934FE1ED974B400DE167E /* TCUser.m */; };
+		277935051ED9BA0B00DE167E /* TCRestAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 277935041ED9BA0B00DE167E /* TCRestAPIManager.m */; };
+		2779350B1ED9BA9700DE167E /* TCService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779350A1ED9BA9700DE167E /* TCService.m */; };
+		2779350E1ED9BC7D00DE167E /* TCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779350D1ED9BC7D00DE167E /* TCTestViewController.m */; };
+		27BC16A11EDC6AD600D63AED /* TCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC16A01EDC6AD600D63AED /* TCEvent.m */; };
+		27BC16A41EDC7D8E00D63AED /* TCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BC16A31EDC7D8E00D63AED /* TCChatViewController.m */; };
+		27C1833B1EDE99E50048DBBF /* TCSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C1833A1EDE99E50048DBBF /* TCSearchResultsViewController.m */; };
+		27C183411EDFF6020048DBBF /* TCMemberResponsed.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C183401EDFF6010048DBBF /* TCMemberResponsed.m */; };
+		27FE97E41EDA86C000EE965D /* TCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE97E31EDA86C000EE965D /* TCLoginViewController.m */; };
+		27FE97EA1EDA8A5700EE965D /* TCChannelListViewControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE97E91EDA8A5700EE965D /* TCChannelListViewControlller.m */; };
+		27FE97ED1EDAA9F800EE965D /* TCChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE97EC1EDAA9F800EE965D /* TCChannel.m */; };
+		27FE97F01EDAB46000EE965D /* TCMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE97EF1EDAB46000EE965D /* TCMember.m */; };
+		27FE97F31EDAE17700EE965D /* TCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE97F21EDAE17700EE965D /* TCMessage.m */; };
+		27FE97F81EDB0E3800EE965D /* TCCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE97F71EDB0E3800EE965D /* TCCredential.m */; };
+		27FE97FB1EDB150800EE965D /* TCBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FE97FA1EDB150800EE965D /* TCBinding.m */; };
+		30802D81613EB720593FB202 /* libPods-twilioChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B393C0A93872911A04A7DF2B /* libPods-twilioChat.a */; };
+		ADC9FB10C32FC4E4EFBECB10 /* libPods-twilioChatUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FAC06553C6C151D748FAC7 /* libPods-twilioChatUITests.a */; };
+		ED865C38C584869ECD9D4F80 /* libPods-twilioChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D34607360EA3E181237880E /* libPods-twilioChatTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		277934091ED5727F00DE167E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277933E71ED5727F00DE167E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 277933EE1ED5727F00DE167E;
+			remoteInfo = twilioChat;
+		};
+		277934141ED5727F00DE167E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277933E71ED5727F00DE167E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 277933EE1ED5727F00DE167E;
+			remoteInfo = twilioChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03FAC06553C6C151D748FAC7 /* libPods-twilioChatUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-twilioChatUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B40D160D64A53EF06C2D27 /* Pods-twilioChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twilioChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twilioChatUITests/Pods-twilioChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		277933EF1ED5727F00DE167E /* twilioChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twilioChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		277933F31ED5727F00DE167E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		277933F51ED5727F00DE167E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		277933F61ED5727F00DE167E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		277933FC1ED5727F00DE167E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		277933FE1ED5727F00DE167E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		277934011ED5727F00DE167E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		277934031ED5727F00DE167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277934081ED5727F00DE167E /* twilioChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twilioChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2779340C1ED5727F00DE167E /* twilioChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twilioChatTests.m; sourceTree = "<group>"; };
+		2779340E1ED5727F00DE167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277934131ED5727F00DE167E /* twilioChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twilioChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		277934171ED5727F00DE167E /* twilioChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twilioChatUITests.m; sourceTree = "<group>"; };
+		277934191ED5727F00DE167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277934251ED5738700DE167E /* ChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewController.h; sourceTree = "<group>"; };
+		277934261ED5738700DE167E /* ChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewController.m; sourceTree = "<group>"; };
+		277934281ED5AB6A00DE167E /* ChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		277934291ED5AB6A00DE167E /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		2779342B1ED5B22200DE167E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2779342C1ED5B22200DE167E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		277934FD1ED974B400DE167E /* TCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUser.h; sourceTree = "<group>"; };
+		277934FE1ED974B400DE167E /* TCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUser.m; sourceTree = "<group>"; };
+		277935031ED9BA0B00DE167E /* TCRestAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRestAPIManager.h; sourceTree = "<group>"; };
+		277935041ED9BA0B00DE167E /* TCRestAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRestAPIManager.m; sourceTree = "<group>"; };
+		277935091ED9BA9700DE167E /* TCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCService.h; sourceTree = "<group>"; };
+		2779350A1ED9BA9700DE167E /* TCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCService.m; sourceTree = "<group>"; };
+		2779350C1ED9BC7D00DE167E /* TCTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTestViewController.h; sourceTree = "<group>"; };
+		2779350D1ED9BC7D00DE167E /* TCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTestViewController.m; sourceTree = "<group>"; };
+		27BC169F1EDC6AD600D63AED /* TCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCEvent.h; sourceTree = "<group>"; };
+		27BC16A01EDC6AD600D63AED /* TCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCEvent.m; sourceTree = "<group>"; };
+		27BC16A21EDC7D8E00D63AED /* TCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChatViewController.h; sourceTree = "<group>"; };
+		27BC16A31EDC7D8E00D63AED /* TCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCChatViewController.m; sourceTree = "<group>"; };
+		27C183391EDE99E40048DBBF /* TCSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSearchResultsViewController.h; sourceTree = "<group>"; };
+		27C1833A1EDE99E50048DBBF /* TCSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSearchResultsViewController.m; sourceTree = "<group>"; };
+		27C1833F1EDFF6010048DBBF /* TCMemberResponsed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMemberResponsed.h; sourceTree = "<group>"; };
+		27C183401EDFF6010048DBBF /* TCMemberResponsed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMemberResponsed.m; sourceTree = "<group>"; };
+		27FE97E21EDA86C000EE965D /* TCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLoginViewController.h; sourceTree = "<group>"; };
+		27FE97E31EDA86C000EE965D /* TCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLoginViewController.m; sourceTree = "<group>"; };
+		27FE97E81EDA8A5700EE965D /* TCChannelListViewControlller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChannelListViewControlller.h; sourceTree = "<group>"; };
+		27FE97E91EDA8A5700EE965D /* TCChannelListViewControlller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCChannelListViewControlller.m; sourceTree = "<group>"; };
+		27FE97EB1EDAA9F800EE965D /* TCChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChannel.h; sourceTree = "<group>"; };
+		27FE97EC1EDAA9F800EE965D /* TCChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCChannel.m; sourceTree = "<group>"; };
+		27FE97EE1EDAB46000EE965D /* TCMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMember.h; sourceTree = "<group>"; };
+		27FE97EF1EDAB46000EE965D /* TCMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMember.m; sourceTree = "<group>"; };
+		27FE97F11EDAE17700EE965D /* TCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMessage.h; sourceTree = "<group>"; };
+		27FE97F21EDAE17700EE965D /* TCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCMessage.m; sourceTree = "<group>"; };
+		27FE97F51EDAF7C300EE965D /* twilioChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = twilioChat.entitlements; sourceTree = "<group>"; };
+		27FE97F61EDB0E3800EE965D /* TCCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCredential.h; sourceTree = "<group>"; };
+		27FE97F71EDB0E3800EE965D /* TCCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCredential.m; sourceTree = "<group>"; };
+		27FE97F91EDB150800EE965D /* TCBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBinding.h; sourceTree = "<group>"; };
+		27FE97FA1EDB150800EE965D /* TCBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBinding.m; sourceTree = "<group>"; };
+		3B1C0A83F38856D36DC3E952 /* Pods-twilioChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twilioChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-twilioChatUITests/Pods-twilioChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D34607360EA3E181237880E /* libPods-twilioChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-twilioChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5725F2B8FEA2207701978558 /* Pods-twilioChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twilioChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-twilioChat/Pods-twilioChat.release.xcconfig"; sourceTree = "<group>"; };
+		89B7050988E352CDE634FB04 /* Pods-twilioChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twilioChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twilioChat/Pods-twilioChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A33156B57CD3DB66CFAFC053 /* Pods-twilioChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twilioChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-twilioChatTests/Pods-twilioChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		B393C0A93872911A04A7DF2B /* libPods-twilioChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-twilioChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D218B960B54822F4294756BE /* Pods-twilioChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twilioChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twilioChatTests/Pods-twilioChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		277933EC1ED5727F00DE167E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30802D81613EB720593FB202 /* libPods-twilioChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		277934051ED5727F00DE167E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED865C38C584869ECD9D4F80 /* libPods-twilioChatTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		277934101ED5727F00DE167E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC9FB10C32FC4E4EFBECB10 /* libPods-twilioChatUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24E4F6193238C14729FD2BBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89B7050988E352CDE634FB04 /* Pods-twilioChat.debug.xcconfig */,
+				5725F2B8FEA2207701978558 /* Pods-twilioChat.release.xcconfig */,
+				D218B960B54822F4294756BE /* Pods-twilioChatTests.debug.xcconfig */,
+				A33156B57CD3DB66CFAFC053 /* Pods-twilioChatTests.release.xcconfig */,
+				13B40D160D64A53EF06C2D27 /* Pods-twilioChatUITests.debug.xcconfig */,
+				3B1C0A83F38856D36DC3E952 /* Pods-twilioChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		277933E61ED5727F00DE167E = {
+			isa = PBXGroup;
+			children = (
+				277933F11ED5727F00DE167E /* twilioChat */,
+				2779340B1ED5727F00DE167E /* twilioChatTests */,
+				277934161ED5727F00DE167E /* twilioChatUITests */,
+				277933F01ED5727F00DE167E /* Products */,
+				24E4F6193238C14729FD2BBC /* Pods */,
+				7D7E5C011C569016CE051067 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		277933F01ED5727F00DE167E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				277933EF1ED5727F00DE167E /* twilioChat.app */,
+				277934081ED5727F00DE167E /* twilioChatTests.xctest */,
+				277934131ED5727F00DE167E /* twilioChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		277933F11ED5727F00DE167E /* twilioChat */ = {
+			isa = PBXGroup;
+			children = (
+				27FE97F51EDAF7C300EE965D /* twilioChat.entitlements */,
+				277933F51ED5727F00DE167E /* AppDelegate.h */,
+				277933F61ED5727F00DE167E /* AppDelegate.m */,
+				27FE97E21EDA86C000EE965D /* TCLoginViewController.h */,
+				27FE97E31EDA86C000EE965D /* TCLoginViewController.m */,
+				27FE97E81EDA8A5700EE965D /* TCChannelListViewControlller.h */,
+				27FE97E91EDA8A5700EE965D /* TCChannelListViewControlller.m */,
+				27BC16A21EDC7D8E00D63AED /* TCChatViewController.h */,
+				27BC16A31EDC7D8E00D63AED /* TCChatViewController.m */,
+				27C183391EDE99E40048DBBF /* TCSearchResultsViewController.h */,
+				27C1833A1EDE99E50048DBBF /* TCSearchResultsViewController.m */,
+				2779350C1ED9BC7D00DE167E /* TCTestViewController.h */,
+				2779350D1ED9BC7D00DE167E /* TCTestViewController.m */,
+				2779342B1ED5B22200DE167E /* LoginViewController.h */,
+				2779342C1ED5B22200DE167E /* LoginViewController.m */,
+				277935031ED9BA0B00DE167E /* TCRestAPIManager.h */,
+				277935041ED9BA0B00DE167E /* TCRestAPIManager.m */,
+				27BC169F1EDC6AD600D63AED /* TCEvent.h */,
+				27BC16A01EDC6AD600D63AED /* TCEvent.m */,
+				27FE97F61EDB0E3800EE965D /* TCCredential.h */,
+				27FE97F71EDB0E3800EE965D /* TCCredential.m */,
+				27FE97F91EDB150800EE965D /* TCBinding.h */,
+				27FE97FA1EDB150800EE965D /* TCBinding.m */,
+				27FE97F11EDAE17700EE965D /* TCMessage.h */,
+				27FE97F21EDAE17700EE965D /* TCMessage.m */,
+				27FE97EB1EDAA9F800EE965D /* TCChannel.h */,
+				27FE97EC1EDAA9F800EE965D /* TCChannel.m */,
+				277935091ED9BA9700DE167E /* TCService.h */,
+				2779350A1ED9BA9700DE167E /* TCService.m */,
+				277934FD1ED974B400DE167E /* TCUser.h */,
+				277934FE1ED974B400DE167E /* TCUser.m */,
+				27FE97EE1EDAB46000EE965D /* TCMember.h */,
+				27FE97EF1EDAB46000EE965D /* TCMember.m */,
+				27C1833F1EDFF6010048DBBF /* TCMemberResponsed.h */,
+				27C183401EDFF6010048DBBF /* TCMemberResponsed.m */,
+				277934281ED5AB6A00DE167E /* ChatRoomViewController.h */,
+				277934291ED5AB6A00DE167E /* ChatRoomViewController.m */,
+				277934251ED5738700DE167E /* ChatTableViewController.h */,
+				277934261ED5738700DE167E /* ChatTableViewController.m */,
+				277933FB1ED5727F00DE167E /* Main.storyboard */,
+				277933FE1ED5727F00DE167E /* Assets.xcassets */,
+				277934001ED5727F00DE167E /* LaunchScreen.storyboard */,
+				277934031ED5727F00DE167E /* Info.plist */,
+				277933F21ED5727F00DE167E /* Supporting Files */,
+			);
+			path = twilioChat;
+			sourceTree = "<group>";
+		};
+		277933F21ED5727F00DE167E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				277933F31ED5727F00DE167E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2779340B1ED5727F00DE167E /* twilioChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				2779340C1ED5727F00DE167E /* twilioChatTests.m */,
+				2779340E1ED5727F00DE167E /* Info.plist */,
+			);
+			path = twilioChatTests;
+			sourceTree = "<group>";
+		};
+		277934161ED5727F00DE167E /* twilioChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				277934171ED5727F00DE167E /* twilioChatUITests.m */,
+				277934191ED5727F00DE167E /* Info.plist */,
+			);
+			path = twilioChatUITests;
+			sourceTree = "<group>";
+		};
+		7D7E5C011C569016CE051067 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B393C0A93872911A04A7DF2B /* libPods-twilioChat.a */,
+				3D34607360EA3E181237880E /* libPods-twilioChatTests.a */,
+				03FAC06553C6C151D748FAC7 /* libPods-twilioChatUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		277933EE1ED5727F00DE167E /* twilioChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2779341C1ED5727F00DE167E /* Build configuration list for PBXNativeTarget "twilioChat" */;
+			buildPhases = (
+				111D2106C6509F9AD2EDFA49 /* [CP] Check Pods Manifest.lock */,
+				277933EB1ED5727F00DE167E /* Sources */,
+				277933EC1ED5727F00DE167E /* Frameworks */,
+				277933ED1ED5727F00DE167E /* Resources */,
+				2A985F563914AA467EEF927D /* [CP] Embed Pods Frameworks */,
+				6A363DEDEF8FAB26123A8F55 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = twilioChat;
+			productName = twilioChat;
+			productReference = 277933EF1ED5727F00DE167E /* twilioChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		277934071ED5727F00DE167E /* twilioChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2779341F1ED5727F00DE167E /* Build configuration list for PBXNativeTarget "twilioChatTests" */;
+			buildPhases = (
+				B22D79486C660EF451969350 /* [CP] Check Pods Manifest.lock */,
+				277934041ED5727F00DE167E /* Sources */,
+				277934051ED5727F00DE167E /* Frameworks */,
+				277934061ED5727F00DE167E /* Resources */,
+				6624089F8CDE0ADE1BAA5076 /* [CP] Embed Pods Frameworks */,
+				EC653B1E8650871532B3F4D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2779340A1ED5727F00DE167E /* PBXTargetDependency */,
+			);
+			name = twilioChatTests;
+			productName = twilioChatTests;
+			productReference = 277934081ED5727F00DE167E /* twilioChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		277934121ED5727F00DE167E /* twilioChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 277934221ED5727F00DE167E /* Build configuration list for PBXNativeTarget "twilioChatUITests" */;
+			buildPhases = (
+				B6A1C6F4E00ECE817E37216D /* [CP] Check Pods Manifest.lock */,
+				2779340F1ED5727F00DE167E /* Sources */,
+				277934101ED5727F00DE167E /* Frameworks */,
+				277934111ED5727F00DE167E /* Resources */,
+				8242D2DF7B33BE69B00AA975 /* [CP] Embed Pods Frameworks */,
+				146234BE931DD341799589ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				277934151ED5727F00DE167E /* PBXTargetDependency */,
+			);
+			name = twilioChatUITests;
+			productName = twilioChatUITests;
+			productReference = 277934131ED5727F00DE167E /* twilioChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		277933E71ED5727F00DE167E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = LAL;
+				TargetAttributes = {
+					277933EE1ED5727F00DE167E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6PLS6VLG93;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					277934071ED5727F00DE167E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 277933EE1ED5727F00DE167E;
+					};
+					277934121ED5727F00DE167E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 277933EE1ED5727F00DE167E;
+					};
+				};
+			};
+			buildConfigurationList = 277933EA1ED5727F00DE167E /* Build configuration list for PBXProject "twilioChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 277933E61ED5727F00DE167E;
+			productRefGroup = 277933F01ED5727F00DE167E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				277933EE1ED5727F00DE167E /* twilioChat */,
+				277934071ED5727F00DE167E /* twilioChatTests */,
+				277934121ED5727F00DE167E /* twilioChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		277933ED1ED5727F00DE167E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277934021ED5727F00DE167E /* LaunchScreen.storyboard in Resources */,
+				277933FF1ED5727F00DE167E /* Assets.xcassets in Resources */,
+				277933FD1ED5727F00DE167E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		277934061ED5727F00DE167E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		277934111ED5727F00DE167E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		111D2106C6509F9AD2EDFA49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		146234BE931DD341799589ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twilioChatUITests/Pods-twilioChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A985F563914AA467EEF927D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twilioChat/Pods-twilioChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6624089F8CDE0ADE1BAA5076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twilioChatTests/Pods-twilioChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A363DEDEF8FAB26123A8F55 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twilioChat/Pods-twilioChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8242D2DF7B33BE69B00AA975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twilioChatUITests/Pods-twilioChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22D79486C660EF451969350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A1C6F4E00ECE817E37216D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC653B1E8650871532B3F4D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twilioChatTests/Pods-twilioChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		277933EB1ED5727F00DE167E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277933F71ED5727F00DE167E /* AppDelegate.m in Sources */,
+				277934FF1ED974B500DE167E /* TCUser.m in Sources */,
+				27FE97F31EDAE17700EE965D /* TCMessage.m in Sources */,
+				277933F41ED5727F00DE167E /* main.m in Sources */,
+				27FE97F81EDB0E3800EE965D /* TCCredential.m in Sources */,
+				277934271ED5738700DE167E /* ChatTableViewController.m in Sources */,
+				27FE97EA1EDA8A5700EE965D /* TCChannelListViewControlller.m in Sources */,
+				2779342A1ED5AB6A00DE167E /* ChatRoomViewController.m in Sources */,
+				27BC16A11EDC6AD600D63AED /* TCEvent.m in Sources */,
+				27FE97FB1EDB150800EE965D /* TCBinding.m in Sources */,
+				2779350B1ED9BA9700DE167E /* TCService.m in Sources */,
+				27C1833B1EDE99E50048DBBF /* TCSearchResultsViewController.m in Sources */,
+				27C183411EDFF6020048DBBF /* TCMemberResponsed.m in Sources */,
+				2779350E1ED9BC7D00DE167E /* TCTestViewController.m in Sources */,
+				27FE97F01EDAB46000EE965D /* TCMember.m in Sources */,
+				27FE97E41EDA86C000EE965D /* TCLoginViewController.m in Sources */,
+				2779342D1ED5B22200DE167E /* LoginViewController.m in Sources */,
+				27FE97ED1EDAA9F800EE965D /* TCChannel.m in Sources */,
+				277935051ED9BA0B00DE167E /* TCRestAPIManager.m in Sources */,
+				27BC16A41EDC7D8E00D63AED /* TCChatViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		277934041ED5727F00DE167E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2779340D1ED5727F00DE167E /* twilioChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2779340F1ED5727F00DE167E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277934181ED5727F00DE167E /* twilioChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2779340A1ED5727F00DE167E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 277933EE1ED5727F00DE167E /* twilioChat */;
+			targetProxy = 277934091ED5727F00DE167E /* PBXContainerItemProxy */;
+		};
+		277934151ED5727F00DE167E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 277933EE1ED5727F00DE167E /* twilioChat */;
+			targetProxy = 277934141ED5727F00DE167E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		277933FB1ED5727F00DE167E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277933FC1ED5727F00DE167E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		277934001ED5727F00DE167E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277934011ED5727F00DE167E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2779341A1ED5727F00DE167E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2779341B1ED5727F00DE167E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2779341D1ED5727F00DE167E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B7050988E352CDE634FB04 /* Pods-twilioChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = twilioChat/twilioChat.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6PLS6VLG93;
+				INFOPLIST_FILE = twilioChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LAL.TwilioChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2779341E1ED5727F00DE167E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5725F2B8FEA2207701978558 /* Pods-twilioChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = twilioChat/twilioChat.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6PLS6VLG93;
+				INFOPLIST_FILE = twilioChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LAL.TwilioChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		277934201ED5727F00DE167E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D218B960B54822F4294756BE /* Pods-twilioChatTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = twilioChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LAL.twilioChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twilioChat.app/twilioChat";
+			};
+			name = Debug;
+		};
+		277934211ED5727F00DE167E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33156B57CD3DB66CFAFC053 /* Pods-twilioChatTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = twilioChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LAL.twilioChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/twilioChat.app/twilioChat";
+			};
+			name = Release;
+		};
+		277934231ED5727F00DE167E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B40D160D64A53EF06C2D27 /* Pods-twilioChatUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = twilioChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LAL.twilioChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = twilioChat;
+			};
+			name = Debug;
+		};
+		277934241ED5727F00DE167E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1C0A83F38856D36DC3E952 /* Pods-twilioChatUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = twilioChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LAL.twilioChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = twilioChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		277933EA1ED5727F00DE167E /* Build configuration list for PBXProject "twilioChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2779341A1ED5727F00DE167E /* Debug */,
+				2779341B1ED5727F00DE167E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2779341C1ED5727F00DE167E /* Build configuration list for PBXNativeTarget "twilioChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2779341D1ED5727F00DE167E /* Debug */,
+				2779341E1ED5727F00DE167E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2779341F1ED5727F00DE167E /* Build configuration list for PBXNativeTarget "twilioChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277934201ED5727F00DE167E /* Debug */,
+				277934211ED5727F00DE167E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		277934221ED5727F00DE167E /* Build configuration list for PBXNativeTarget "twilioChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				277934231ED5727F00DE167E /* Debug */,
+				277934241ED5727F00DE167E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 277933E71ED5727F00DE167E /* Project object */;
+}

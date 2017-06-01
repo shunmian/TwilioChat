@@ -1,0 +1,1 @@
+../../../../TwilioChatClient/TwilioChatClient.framework/Headers/TCHChannelPaginator.h
