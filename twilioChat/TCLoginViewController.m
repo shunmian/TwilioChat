@@ -167,17 +167,6 @@
 #pragma mark - Helper
 
 - (void)keyboardWillShow:(NSNotification *)notification{
-//    CGSize keyboardSize = [[[notification userInfo] objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-//    CGFloat deltaY = 40;
-//    self.movingDeltaY = self.view.frame.size.height - CGRectGetMaxY(self.contentView.frame) - (keyboardSize.height + deltaY);
-//    
-//    if(self.movingDeltaY < 0){
-//        [UIView animateWithDuration:0.3 animations:^{
-//            CGRect f = self.contentView.frame;
-//            f.origin.y -= -self.movingDeltaY;
-//            self.contentView.frame = f;
-//        }];
-//    }
     if(!self.keyBoardShowed){
         self.keyBoardShowed = YES;
         NSLog(@"keyboardwillshow");
@@ -190,7 +179,6 @@
             }];
         });
     }
-
 }
 
 -(void)keyboardWillHide:(NSNotification *)notification{

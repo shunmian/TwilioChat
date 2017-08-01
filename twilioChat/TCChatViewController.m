@@ -40,7 +40,7 @@
     self.automaticallyScrollsToMostRecentMessage = YES;
     self.textView = self.inputToolbar.contentView.textView;
     self.textView.delegate = self;
-    
+    NSLog(@"view");
     //add searchViewController
     
     self.resultController = [[TCSearchResultsViewController alloc] init];
